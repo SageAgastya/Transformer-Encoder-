@@ -211,9 +211,6 @@ train_dataset = [[['rishabh is good at gsgujsih', 'rishabh is great'], ['rishabh
 
 p = Pad()
 net = Encoder()
-# X, y = Preprocess()                  #import from ReviewPaperPreprocess
-# a,b,c,d = DataSplit(X, y)            #import from ReviewPaperPreprocess
-# train_dataset = (a,c)
 rep = p(train_dataset[0])
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
